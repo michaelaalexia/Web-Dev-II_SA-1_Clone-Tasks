@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+} 
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 5%
+}
+
