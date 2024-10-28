@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #e9e9e9;
 }
 
 .logo {
@@ -13,6 +13,11 @@ nav {
     justify-content: space-evenly;
 }
 
+a {
+    color: black;
+}
+
+
 .page {
     display: flex;
     justify-content: center;
@@ -20,3 +25,7 @@ nav {
     margin: 5%
 }
 
+.img {
+    width: 100%;
+    height: auto;
+}
