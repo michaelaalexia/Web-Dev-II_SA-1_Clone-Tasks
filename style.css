@@ -1,0 +1,30 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit; 
+}
+
+/* watch.it brand colors 
+> #070410
+> #231651
+> #4DCCBD
+> #EEF36A
+> #FFFFFF
+*/
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    background-color: #070410;
+}
+
+a {
+    margin-top: 20px;
+}
+
+button {
+    color: #070410;
+    background-color: #EEF36A;
+}
