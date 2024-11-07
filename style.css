@@ -1,6 +1,6 @@
-/* @media (orientation: portrait), (max-resolution: 1024px){} /* overall */
+@media (orientation: portrait), (max-resolution: 1024px){} /* overall */
 
-/* @media (min-width: 360px) {
+@media (min-width: 360px) {
     nav a {
         display: none;
     }
@@ -15,10 +15,30 @@
         padding: 12px;
         max-width: 900px;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
 }
 
 @media (min-width: 720px) {
-
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        color: #FFFFFF;
+        background-color: #070410;
+    }
+    
+    a {
+        margin-top: 20px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -33,66 +53,7 @@
         margin-top: 20px;
     }
 
-    
-} */
-
-html {
-	box-sizing: border-box;
-}
-*, *:before, *:after {
-	box-sizing: inherit; 
-}
-
-/* watch.it brand colors 
-> #070410
-> #231651
-> #4DCCBD
-> #EEF36A
-> #FFFFFF
-*/
-
-body {
-    background-color: #231651;
-    color: #FFFFFF;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-}
-
-/* BUTTON AND NAV BAR */
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    color: #FFFFFF;
-    background-color: #070410;
-}
-
-a {
-    margin-top: 20px;
-}
-
-button {
-    color: #070410;
-    background-color: #EEF36A;
-}
-
-button:hover{
-    background-color: #4DCCBD;
-}
-
-.container {
-    padding: 2%;
-    background-color: #FFFFFF;
-    color: #070410;
-    margin-left: 11%;
-    margin-right: 11%;
-    margin-top: 5%
-}
-
-/* grid 1 */
+    /* grid 1 */
 .top_poster {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -137,6 +98,135 @@ button:hover{
 }
 
 /* grid 3 : repeats because they're the same style */
+
+
+.container_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 9px;
+}
+    
+.poster3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+.d4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+}
+
+.b4 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+    
+} 
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit; 
+}
+
+/* watch.it brand colors 
+> #070410
+> #231651
+> #4DCCBD
+> #EEF36A
+> #FFFFFF */
+
+
+body {
+    background-color: #231651;
+    color: #FFFFFF;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+/* BUTTON AND NAV BAR */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    background-color: #070410;
+}
+
+a {
+    margin-top: 20px;
+}
+
+button {
+    color: #070410;
+    background-color: #EEF36A;
+}
+
+button:hover{
+    background-color: #4DCCBD;
+}
+
+.container {
+    padding: 2%;
+    background-color: #FFFFFF;
+    color: #070410;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%
+}
+
+/* grid 1 
+.top_poster {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+    
+.poster {
+    grid-column: span 5 / span 4;
+    grid-row: span 4 / span 4;
+    justify-self: center;
+}
+
+
+.description {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-row-start: 5;
+}
+
+.b {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 5;
+    justify-self: right;
+}
+
+.b button, .b2 button, .b4 button, .column button {
+    width: 200px;
+    height: 100px;
+}
+
+/* grid 2 
+
+.container_1 {
+    display: flex;
+    gap: 10%;
+}
+
+.column {
+    flex: 50%;
+}
+
+/* grid 3 : repeats because they're the same style 
 
 
 .container_2 {
