@@ -1,3 +1,41 @@
+/* @media (orientation: portrait), (max-resolution: 1024px){} /* overall */
+
+/* @media (min-width: 360px) {
+    nav a {
+        display: none;
+    }
+
+    nav h1, nav button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    body {
+        padding: 12px;
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 720px) {
+
+}
+
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        color: #FFFFFF;
+        background-color: #070410;
+    }
+    
+    a {
+        margin-top: 20px;
+    }
+
+    
+} */
+
 html {
 	box-sizing: border-box;
 }
@@ -45,18 +83,21 @@ button:hover{
     background-color: #4DCCBD;
 }
 
-/* grid 1 */
-.top_poster {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
+.container {
     padding: 2%;
     background-color: #FFFFFF;
     color: #070410;
     margin-left: 11%;
     margin-right: 11%;
     margin-top: 5%
+}
+
+/* grid 1 */
+.top_poster {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
 }
     
 .poster {
@@ -79,61 +120,21 @@ button:hover{
     justify-self: right;
 }
 
-.b button, .b2 button, .b3 button, .b4 button {
+.b button, .b2 button, .b4 button, .column button {
     width: 200px;
     height: 100px;
 }
 
 /* grid 2 */
 
-
 .container_1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 7px;
-    padding: 2%;
-    background-color: #FFFFFF;
-    color: #070410;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%
-}
-    
-.poster1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
+    display: flex;
+    gap: 10%;
 }
 
-.poster2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
+.column {
+    flex: 50%;
 }
-
-.d2 {
-    grid-column: span 2 / span 2;
-    grid-row-start: 4;
-}
-
-.d3 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4;
-}
-
-.b2 {
-    grid-column: span 2 / span 2;
-    grid-row-start: 5;
-    justify-self: center;
-}
-
- .b3 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 5;
-    justify-self: center;
-} 
 
 /* grid 3 : repeats because they're the same style */
 
@@ -143,12 +144,6 @@ button:hover{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 9px;
-    padding: 2%;
-    background-color: #FFFFFF;
-    color: #070410;
-    margin-left: 11%;
-    margin-right: 11%;
-    margin-top: 5%
 }
     
 .poster3 {
