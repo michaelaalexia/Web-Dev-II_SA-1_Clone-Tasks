@@ -39,6 +39,15 @@
         height: auto;
         max-width: 600px;
     }
+
+    .container_1 {
+        display: flex;
+        gap: 10%;
+    }
+    
+    .column {
+        flex: 50%;
+    }
 }
 
 @media (min-width: 1024px) {
