@@ -40,12 +40,12 @@
         max-width: 600px;
     }
 
-    .container_1 {
+    .container_duo {
         display: flex;
         gap: 10%;
     }
     
-    .column {
+    .column2 {
         flex: 50%;
     }
 }
