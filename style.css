@@ -1,10 +1,22 @@
 @media (orientation: portrait), (max-resolution: 1024px){} /* overall */
 
-@media (min-width: 360px) and (max-width: 719px) {
+.overall {
+    display: block;
+}
     
 .c {
     display: none;
 }
+
+@media (min-width: 360px) and (max-width: 719px) {
+    .overall {
+        display: block;
+    }
+
+    .c {
+        display: none;
+    }
+
     nav a {
         display: none;
     }
@@ -31,13 +43,13 @@
 
 }
 
-@media (min-width: 720px) and (max-width: 1023px) { 
-    .overall {
-        display: none;
-    }
-
+@media (min-width: 720px) and (max-width: 1023px){
     .c {
         display: block;
+    }
+
+    .overall {
+        display: none;
     }
 
     nav {
@@ -47,7 +59,7 @@
         color: #FFFFFF;
         background-color: #070410;
     }
-    
+
     img {
         width: 100%;
         height: auto;
@@ -56,11 +68,11 @@
 
     .holder {
         padding: 2%;
-    background-color: #FFFFFF;
-    color: #070410;
-    margin-left: 11%;
-    margin-right: 11%;
-    margin-top: 5%;
+        background-color: #FFFFFF;
+        color: #070410;
+        margin-left: 11%;
+        margin-right: 11%;
+        margin-top: 5;
     }
 
     .con {
@@ -68,18 +80,18 @@
         gap: 10%;
         max-width: 800px;
     }
-    
-    .column2 {
-        flex: 50%;
-    }
 
+    .column2 {
+        flex: 50%
+    }
 }
 
 @media (min-width: 1024px) {
-    
-.c {
-    display: none;
-}
+    .overall {
+        display: block;
+    }
+
+    .c {display: none;}
     nav {
         display: flex;
         justify-content: space-evenly;
