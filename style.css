@@ -51,7 +51,7 @@
     img {
         width: 100%;
         height: auto;
-        max-width: 600px;
+        max-width: 500px;
     }
 
     .holder {
@@ -60,12 +60,13 @@
     color: #070410;
     margin-left: 11%;
     margin-right: 11%;
-    margin-top: 5%
+    margin-top: 5%;
     }
 
     .con {
         display: flex;
         gap: 10%;
+        max-width: 800px;
     }
     
     .column2 {
@@ -135,6 +136,7 @@
 
 .column {
     flex: 50%;
+    float: right;
 }
 
 /* grid 3 : repeats because they're the same style */
