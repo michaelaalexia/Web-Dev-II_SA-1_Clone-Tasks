@@ -1,5 +1,12 @@
 @media (orientation: portrait), (max-resolution: 1024px){} /* overall */
 
+/* watch.it brand colors 
+> #070410
+> #231651
+> #4DCCBD
+> #EEF36A
+> #FFFFFF */
+
 .overall {
     display: block;
 }
@@ -91,7 +98,10 @@
         display: block;
     }
 
-    .c {display: none;}
+    .c {
+        display: none;
+    }
+
     nav {
         display: flex;
         justify-content: space-evenly;
@@ -186,13 +196,6 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit; 
 }
-
-/* watch.it brand colors 
-> #070410
-> #231651
-> #4DCCBD
-> #EEF36A
-> #FFFFFF */
 
 
 body {
